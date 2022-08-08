@@ -1,0 +1,33 @@
+{
+  "name": "@sempervirens/cacher",
+  "version": "0.0.1",
+  "description": "A way to cache HTML pages in a MongoDB database",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "cd test && mocha *.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukedupuis/sempervirens-cacher.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "cache",
+    "HTML"
+  ],
+  "author": "Luke Dupuis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukedupuis/sempervirens-cacher/issues"
+  },
+  "homepage": "https://github.com/lukedupuis/sempervirens-cacher#readme",
+  "dependencies": {
+    "@sempervirens/dao": "^0.3.0",
+    "mongoose": "^6.5.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}
