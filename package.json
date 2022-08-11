@@ -1,6 +1,6 @@
 {
   "name": "@sempervirens/cacher",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A way to cache HTML pages in a MongoDB database",
   "main": "index.js",
   "type": "module",
