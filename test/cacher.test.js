@@ -1,5 +1,4 @@
 import { expect } from 'chai';
-import mongoose from 'mongoose';
 import dao from '@sempervirens/dao';
 
 import cacher from '../src/cacher.class.js';
@@ -126,9 +125,8 @@ describe('1. cacher', () => {
     });
 
     after(async () => {
-      await new Promise(resolve => setTimeout(() => resolve(), 500));
       await dao.getDb('cache').connection.dropDatabase();
-      process.exit();
+      setTimeout(() => process.exit(), 100);
     });
 
   });

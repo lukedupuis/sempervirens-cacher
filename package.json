@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "cd test && mocha *.test.js"
+    "test": "cd test && mocha cacher.test && mocha cache-request-handler.test"
   },
   "repository": {
     "type": "git",
@@ -23,11 +23,15 @@
   },
   "homepage": "https://github.com/lukedupuis/sempervirens-cacher#readme",
   "dependencies": {
+    "@sempervirens/authorizer": "^0.5.0",
     "@sempervirens/dao": "^0.3.0",
+    "@sempervirens/endpoint": "^0.9.1",
     "mongoose": "^6.5.1"
   },
   "devDependencies": {
     "chai": "^4.3.6",
-    "mocha": "^10.0.0"
+    "express": "^4.18.1",
+    "mocha": "^10.0.0",
+    "superagent": "^8.0.0"
   }
 }
