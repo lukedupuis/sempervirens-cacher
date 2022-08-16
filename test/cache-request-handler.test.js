@@ -71,6 +71,7 @@ describe('1. cache.request-handler', () => {
         const record2 = await Page.create({ url: getUrl('test-1'), html });
         const _id2 = record2._id.toString();
         const token = authorizer.encrypt({ expiresIn: '1m', data: { prop1: 'val1' } });
+        // console.log(authorizer.isValid(token));
         const { body: { message } } = await superagent
           .get('http://localhost:8080/cache/clear')
           .set('Authorization', `Bearer ${token}`);
